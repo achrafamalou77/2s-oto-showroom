@@ -38,7 +38,7 @@
 }
 
 .logoImage {
-  height: 65px;
+  height: 100px;
   width: auto;
   object-fit: contain;
   filter: brightness(1.1);
@@ -193,4 +193,14 @@
   .ctaBtn {
     display: none;
   }
+
+  /* Adjust logo and navbar on mobile */
+  .navbar {
+    height: 85px;
+  }
+
+  .logoImage {
+    height: 75px;
+  }
 }
+

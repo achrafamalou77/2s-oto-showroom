@@ -4,25 +4,25 @@ import styles from './OurTeam.module.css';
 
 const team = [
   {
-    name: 'Achraf',
-    role: 'Directeur Commercial',
+    name: 'Zizou 2s oto',
+    role: 'Deal Closer',
     phone: '0550 59 94 37',
     email: 'contact@2soto.dz',
-    initial: 'A',
+    initial: 'Z',
   },
   {
-    name: 'Mohamed',
+    name: 'Taki 2s oto',
     role: 'Conseiller Automobile',
     phone: '0550 59 94 37',
     email: 'contact@2soto.dz',
-    initial: 'M',
+    initial: 'T',
   },
   {
-    name: 'Yacine',
-    role: 'Service Après-Vente',
+    name: 'Achraf 2s oto',
+    role: 'IT Manager',
     phone: '0550 59 94 37',
     email: 'contact@2soto.dz',
-    initial: 'Y',
+    initial: 'A',
   },
 ];
 

@@ -5,7 +5,7 @@
 
 .hero {
   background: var(--color-dark);
-  padding: 100px 20px 60px;
+  padding: 120px 20px 60px;
   text-align: center;
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
@@ -252,9 +252,56 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding: 90px 16px 40px;
+  }
+
   .hero h1 { font-size: 2rem; }
+
+  .body {
+    padding: 24px 0 60px;
+  }
+
   .toolbarRight { flex-wrap: wrap; }
   .keywordInput { width: 140px; }
   .filterSelect, .filterInput { min-width: 100%; }
   .sectionHeading { font-size: 1.5rem; }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .conditionTabs {
+    width: 100%;
+  }
+
+  .condTab {
+    flex: 1;
+    text-align: center;
+  }
+
+  .skeleton {
+    height: 280px;
+  }
+
+  .empty {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .filterBar {
+    padding: 14px;
+  }
+
+  .filterRow {
+    gap: 8px;
+  }
 }

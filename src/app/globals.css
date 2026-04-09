@@ -32,7 +32,7 @@
   --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 
-  --nav-height: 72px;
+  --nav-height: 105px;
   --container-max: 1320px;
 }
 

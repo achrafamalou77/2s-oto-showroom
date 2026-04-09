@@ -24,9 +24,21 @@ export default function HeroSection() {
         <div className={styles.searchContainer}>
           {/* Search Bar */}
           <SearchBar />
+        </div>
+      </div>
 
-          {/* Category Icons */}
-          <CategoryIcons />
+      {/* Bottom Pinned Elements */}
+      <div className={styles.bottomPinned}>
+        {/* Category Icons */}
+        <CategoryIcons />
+
+        {/* Scroll Down Arrow */}
+        <div className={styles.scrollArrowWrap}>
+          <a href="#featured-section" className={styles.scrollArrow} aria-label="Voir plus">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </a>
         </div>
       </div>
     </section>

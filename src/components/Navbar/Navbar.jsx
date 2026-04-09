@@ -29,8 +29,8 @@ export default function Navbar() {
           <Image
             src="/images/logo.webp"
             alt="2s oto Logo"
-            width={230}
-            height={95}
+            width={300}
+            height={125}
             priority
             className={styles.logoImage}
             style={{ width: 'auto' }}

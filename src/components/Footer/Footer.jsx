@@ -109,13 +109,13 @@ export default function Footer() {
                   <circle cx="12" cy="10" r="3" />
                 </svg>
               </div>
-              <a 
-                href="https://maps.app.goo.gl/PjNrwAVKrHiwB5qh6" 
-                target="_blank" 
+              <a
+                href="https://maps.app.goo.gl/PjNrwAVKrHiwB5qh6"
+                target="_blank"
                 rel="noopener noreferrer"
                 className={styles.addressLink}
               >
-                Pres de P9F7, طريق النخيل<br/>Ouled Hedadj 35000
+                Rue Nationale N° 5 Réghaïa<br />16035 Algiers, Algeria
               </a>
             </li>
           </ul>

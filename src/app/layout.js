@@ -34,6 +34,10 @@ export const metadata = {
     description: "Achetez des véhicules neufs, d'occasion ou sur commande chez SARL 2S Auto à Alger.",
     images: ['/images/hero-poster.jpg'],
   },
+  icons: {
+    icon: '/images/logo.webp',
+    apple: '/images/logo.webp',
+  },
 };
 
 export default function RootLayout({ children }) {

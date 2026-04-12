@@ -100,7 +100,7 @@ export default function Footer() {
                   <polyline points="22,6 12,13 2,6" />
                 </svg>
               </div>
-              <span>contact@2soto.dz</span>
+              <span>contact@sarl2sauto.dz</span>
             </li>
             <li className={styles.contactItem}>
               <div className={styles.contactIcon}>

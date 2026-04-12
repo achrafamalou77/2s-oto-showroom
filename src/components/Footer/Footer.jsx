@@ -22,7 +22,7 @@ export default function Footer() {
           </div>
           <p className={styles.brandDesc}>
             Votre destination premium pour l&apos;achat de véhicules neufs en
-            Algérie. Qualité, confiance et excellence depuis 2024.
+            Algérie. Qualité, confiance et excellence depuis 2019.
           </p>
 
           {/* Social Icons */}

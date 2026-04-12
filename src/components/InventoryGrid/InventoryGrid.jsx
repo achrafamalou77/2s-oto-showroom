@@ -7,7 +7,7 @@ export default function InventoryGrid({ vehicles }) {
   return (
     <section className={styles.section} id="inventory-section">
       <div className="container">
-        <h2 className={styles.sectionTitle}>Véhicules en Vedette</h2>
+        <h2 className={styles.sectionTitle}>Véhicules Populaires</h2>
 
         <div className={styles.grid}>
           {vehicles.map((vehicle, index) => (

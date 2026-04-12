@@ -88,6 +88,14 @@ export default function Footer() {
             <li className={styles.contactItem}>
               <div className={styles.contactIcon}>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+                </svg>
+              </div>
+              <span>0784 09 57 23</span>
+            </li>
+            <li className={styles.contactItem}>
+              <div className={styles.contactIcon}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                   <polyline points="22,6 12,13 2,6" />
                 </svg>
@@ -113,24 +121,20 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* ---- Newsletter ---- */}
+        {/* ---- Localisation ---- */}
         <div className={styles.column}>
-          <h4 className={styles.colTitle}>Newsletter</h4>
-          <p className={styles.newsText}>
-            Soyez les premiers informés de nos arrivages et offres exclusives.
-          </p>
-          <div className={styles.newsForm}>
-            <input
-              type="email"
-              placeholder="Votre adresse email"
-              className={styles.newsInput}
-              id="footer-newsletter-email"
+          <h4 className={styles.colTitle}>Localisation</h4>
+          <div style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid rgba(255, 255, 255, 0.08)' }}>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.9758233273933!2d3.36106017572543!3d36.72314187226924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128e5d3e77e62b67%3A0x890df236e8806741!2s2s%20oto!5e0!3m2!1sen!2sdz!4v1775731596873!5m2!1sen!2sdz"
+              width="100%"
+              height="180"
+              style={{ border: 0, display: 'block' }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Localisation Google Maps"
             />
-            <button className={styles.newsBtn} id="footer-newsletter-btn" aria-label="S'inscrire">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
-              </svg>
-            </button>
           </div>
         </div>
       </div>

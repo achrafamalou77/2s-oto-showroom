@@ -60,6 +60,7 @@ export default function ContactPage() {
               <div>
                 <strong style={{ display: 'block', color: 'var(--color-gray)', fontSize: '0.9rem', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '1px' }}>Email</strong>
                 <p style={{ fontSize: '1.1rem' }}>contact@sarl2sauto.dz</p>
+                <p style={{ fontSize: '1.1rem' }}>ssauto.alg@gmail.com</p>
               </div>
             </div>
 

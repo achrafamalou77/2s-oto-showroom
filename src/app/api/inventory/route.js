@@ -15,8 +15,8 @@ export async function GET(request) {
     // 1. "Omni-Search" Parameter
     const search = searchParams.get('search');
     if (search) {
-      // Use ilike for case-insensitive partial matches across multiple columns
-      query = query.or(`make.ilike.%${search}%,model.ilike.%${search}%,color.ilike.%${search}%,finition.ilike.%${search}%`);
+      // Use ilike for case-insensitive partial matches across safe columns
+      query = query.or(`make.ilike.%${search}%,model.ilike.%${search}%`);
     }
 
     // 2. Smart Filtering Parameters
@@ -60,7 +60,7 @@ export async function GET(request) {
     }, { status: 200 });
 
   } catch (error) {
-    console.error('API Inventory Error:', error.message);
+    console.error('API Inventory Error:', error.message, error.details || error);
     return NextResponse.json(
       { error: 'Failed to fetch inventory data. Database service may be unavailable.', details: error.message },
       { status: 500 }

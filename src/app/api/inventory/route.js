@@ -4,7 +4,7 @@ import { supabase } from '@/utils/supabaseClient';
 export async function GET(request) {
   try {
     const { searchParams } = new URL(request.url);
-    
+
     // Base query: only available vehicles, selecting all columns to ensure comprehensively fetching 
     // customer details (make, model, year, price, condition, availability, transmission, fuel, bodyType, engine, color, finition, mileage, doors, cylinders, options, equipments, etc.)
     let query = supabase
@@ -17,12 +17,12 @@ export async function GET(request) {
     if (search) {
       // Split by whitespace to evaluate each word independently
       const searchWords = search.trim().split(/\s+/);
-      
+
       searchWords.forEach(word => {
         if (word) {
           // In supabase-js, chaining multiple .or() appends them together using AND logic.
           // This forces the API to ensure EACH word exists SOMEWHERE in the car's data.
-          query = query.or(`make.ilike.%${word}%,model.ilike.%${word}%,finition.ilike.%${word}%,couleur.ilike.%${word}%,transmission.ilike.%${word}%,boite_de_vitesse.ilike.%${word}%,carburant.ilike.%${word}%,equipements_options.ilike.%${word}%`);
+          query = query.or(`make.ilike.%${word}%,model.ilike.%${word}%,finition.ilike.%${word}%,couleur.ilike.%${word}%,transmission.ilike.%${word}%,boite_de_vitesse.ilike.%${word}%,carburant.ilike.%${word}%`);
         }
       });
     }
